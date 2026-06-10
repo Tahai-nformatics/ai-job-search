@@ -29,6 +29,8 @@ These match your strongest and most desired career direction.
 ```
 site:linkedin.com/jobs "Bioinformatics Scientist" "United States"
 site:linkedin.com/jobs "Computational Biologist" "United States"
+site:linkedin.com/jobs "Bioinformatician" "United States"
+site:linkedin.com/jobs "Bioinformatics Analyst" "United States"
 site:indeed.com "Bioinformatics Scientist" "remote"
 site:biospace.com "Computational Biology" "United States"
 site:glassdoor.com "Bioinformatics Engineer" "United States"
