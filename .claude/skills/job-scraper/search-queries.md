@@ -81,10 +81,10 @@ site:linkedin.com/jobs "computational biology" "drug discovery" Philadelphia
 
 Philadelphia metro area is home base. When evaluating results:
 
-- **Ideal:** Philadelphia city, University City, Center City; remote-first roles (US)
+- **Ideal:** Philadelphia city, University City, Center City; New York City; Boston/Cambridge MA; California (Bay Area, San Diego, LA); remote-first roles (US)
 - **Acceptable:** Philadelphia suburbs (Main Line, South Jersey, Wilmington DE area); hybrid with 1-3 days/week in office
-- **Borderline:** New York City (Amtrak commutable but not sustainable daily); Washington DC area
-- **Too far:** Relocation required — flag for discussion, do not auto-discard if role is exceptional
+- **Borderline:** Washington DC area
+- **Too far:** Relocation required outside the above — flag for discussion, do not auto-discard if role is exceptional
 
 ## Date Filter
 
