@@ -1,70 +1,90 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
-
 ## Search Sites
 
-Primary (Danish job market):
-- **jobindex.dk** - largest Danish job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: Denmark / your city)
-- **karriere.dk** - IDA's job board (engineering/science roles)
-- **jobfinder.dk** - another major Danish job board
-- **akademikernes.dk** - academic union job board
+Primary (US job market):
+- **linkedin.com/jobs** - LinkedIn job listings (filter: Philadelphia / Remote / United States)
+- **indeed.com** - broad US job board
+- **glassdoor.com/Jobs** - with company culture context
+- **jobs.lever.co / greenhouse.io** - biotech/pharma/startup ATS listings
+- **USAJobs.gov** - NIH, NCI, NHGRI, FDA roles (federal genomics/bioinformatics)
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+Secondary (academic/research):
+- **jobs.nih.gov** - NIH intramural and extramural positions
+- **higheredjobs.com** - university research positions
+- **naturejobs.com / science.org/careers** - research scientist roles
+- Direct Google searches: `site:upenn.edu/careers bioinformatics`, `site:chop.edu careers bioinformatics`
 
 ## Query Categories
 
-Queries are grouped by priority. Each query should be combined with your location terms (e.g. "Copenhagen", "Sjælland", "Hovedstaden") where the site supports it.
+Queries are grouped by priority. Combine with location terms where supported.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Core Bioinformatics / Computational Genomics
 
-These match your strongest and most desired career direction.
-
-```
-site:jobindex.dk "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_CITY]
-site:jobindex.dk "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+These match Taha's strongest and most desired career direction.
 
 ```
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:jobindex.dk [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:linkedin.com/jobs "bioinformatician" Philadelphia
+site:linkedin.com/jobs "senior bioinformatician" "remote"
+site:linkedin.com/jobs "computational biologist" Philadelphia
+site:indeed.com "bioinformatician" "NGS" Philadelphia
+site:indeed.com "GWAS" "bioinformatician" United States
+site:linkedin.com/jobs "genomics data scientist" Philadelphia
+site:linkedin.com/jobs "staff bioinformatician"
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
+### Priority 2: Statistical Genetics / Population Genomics
 
-Adjacent roles you could pivot into.
-
-```
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:jobindex.dk "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
-```
-
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+These match Taha's deep domain expertise.
 
 ```
-site:jobindex.dk [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:jobindex.dk "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:linkedin.com/jobs "statistical genetics" bioinformatician
+site:linkedin.com/jobs "GWAS" "computational biologist"
+site:linkedin.com/jobs "population genomics" scientist Philadelphia
+site:indeed.com "statistical geneticist" United States
+site:linkedin.com/jobs "Alzheimer" "bioinformatics" scientist
+site:linkedin.com/jobs "neurodegenerative" "genomics" scientist
+```
+
+### Priority 3: Adjacent Roles (Pivot Opportunities)
+
+Roles Taha could pivot into with his background:
+
+```
+site:linkedin.com/jobs "genomics data scientist" biotech
+site:linkedin.com/jobs "bioinformatics engineer" Philadelphia
+site:linkedin.com/jobs "research scientist" "genomics" "Python" Philadelphia
+site:linkedin.com/jobs "computational scientist" "NGS" pharma
+site:linkedin.com/jobs "clinical bioinformatician" Philadelphia
+site:indeed.com "bioinformatics" "pipeline" "AWS" Philadelphia
+```
+
+**Also consider** (proactive suggestions based on Taha's profile):
+- **"Technical Consultant - Genomics"** or **"Scientific Solutions Engineer"** at genomics platform companies (Illumina, 10x Genomics, PacBio, Element Biosciences) — combines deep technical expertise with client-facing impact
+- **"Principal Scientist - Computational Biology"** at biotech/pharma (Regeneron, GSK, Pfizer, Novartis all have Philadelphia-area presence or strong remote programs)
+- **"Bioinformatics Scientist - Rare Disease"** — skills transfer directly from AD genomics
+- **"Research Software Engineer - Genomics"** — for candidates who want to focus on infrastructure/tooling over analysis
+
+### Priority 4: Broader Technical / Healthcare Data
+
+Wider net for adjacent technical roles.
+
+```
+site:linkedin.com/jobs "data scientist" "genomics" Philadelphia
+site:linkedin.com/jobs "machine learning" "bioinformatics" Philadelphia
+site:linkedin.com/jobs "Python" "AWS" "genomics" remote
+site:indeed.com "bioinformatics" "Snakemake" OR "Nextflow" United States
+site:linkedin.com/jobs "computational biology" "drug discovery" Philadelphia
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Philadelphia metro area is home base. When evaluating results:
+
+- **Ideal:** Philadelphia city, University City, Center City; remote-first roles (US)
+- **Acceptable:** Philadelphia suburbs (Main Line, South Jersey, Wilmington DE area); hybrid with 1-3 days/week in office
+- **Borderline:** New York City (Amtrak commutable but not sustainable daily); Washington DC area
+- **Too far:** Relocation required — flag for discussion, do not auto-discard if role is exceptional
 
 ## Date Filter
 
@@ -73,4 +93,6 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- `/scrape biotech` → Priority 3 queries + custom biotech-specific searches
+- `/scrape remote` → add `"remote" OR "fully remote"` to all Priority 1-2 queries
+- `/scrape NIH` → use USAJobs.gov + jobs.nih.gov queries specifically

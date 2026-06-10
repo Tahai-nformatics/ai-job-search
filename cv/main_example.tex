@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Taha Iqbal - Master CV
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -18,24 +17,25 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
+\usepackage{needspace}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Taha Iqbal - CV},
     pdfpagemode=FullScreen,
 }
-\usepackage[scale=0.80]{geometry}
+\usepackage[scale=0.77]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Taha}{Iqbal}
+\address{Philadelphia, PA}{}{}
+\phone[mobile]{(267) 506-6888}
+\email{Taha.iqbal1993@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/taha-iqbal-001}{LinkedIn}, \href{https://github.com/Tahai-nformatics}{GitHub}}
 
 \begin{document}
 
@@ -46,7 +46,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Bioinformatician with 4+ years of experience developing reproducible NGS and GWAS pipelines for population-scale genomic datasets at the University of Pennsylvania. Combines deep expertise in variant analysis, cohort harmonization, and statistical genetics with strong Python, R, and cloud infrastructure skills (AWS, HPC). Experienced working across multidisciplinary teams on publication-ready Alzheimer's disease genomics research, with a track record of building scalable workflows that process terabytes of sequencing data.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -56,15 +56,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Bioinformatics \& Genomics}: NGS analysis (DNA-Seq, RNA-Seq), GWAS, GATK, PLINK, BCF/VCF, Fine-Mapping, Bioconductor, Samtools, Bedtools; variant QC, cohort harmonization, genome build liftover (hg18/hg19 to GRCh38)
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Programming}: Python (pandas, NumPy, scikit-learn, TensorFlow, PyTorch, Flask, FastAPI), R, SQL, C++, Java, Bash/Shell
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud \& HPC}: AWS (S3, EC2, Glacier), SLURM, HPC clusters; parallelized and scalable processing for terabyte-scale datasets
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Pipelines, Containers \& DevOps}: Snakemake, Nextflow, Docker, Singularity, Git; end-to-end reproducible workflow engineering
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Machine Learning \& Statistics}: Linear/Logistic Regression, Decision Trees, Random Forest, NLP; applied ML for genomic and clinical data
 
 \end{itemize}
 
@@ -76,32 +76,37 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY--Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2021--Present}{Bioinformatician II}{Perelman School of Medicine, University of Pennsylvania}{Philadelphia, PA}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1 - be specific, use numbers where possible]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
-    \item [Achievement or responsibility 4]
+    \item Developed and applied reproducible NGS and GWAS analysis workflows for large-scale genomic datasets, enabling variant discovery, cohort-level association analyses, downstream statistical modeling, and robust validation across 50,000+ whole genomes
+    \item Performed large-scale genomic data analyses including variant QC, cohort harmonization, phenotype integration, rare variant aggregation, burden testing support, and longitudinal disease progression analyses using population-scale sequencing datasets
+    \item Built computational workflows for genomic data processing and analysis, including variant extraction, annotation, filtering, genotype harmonization, and preparation of datasets for downstream machine learning and statistical genetics applications
+    \item Optimized high-throughput bioinformatics workflows on AWS (EC2, S3, Glacier) and HPC clusters using parallelized processing strategies, significantly improving scalability and runtime efficiency for terabyte-scale sequencing analyses
+    \item Managed and harmonized large-scale genomic datasets across multiple cohorts, including genome build liftover (hg18/hg19 to GRCh38), metadata standardization, release validation, and reproducible version-controlled data distribution
+    \item Collaborated with multidisciplinary teams including computational biologists, statisticians, and investigators to interpret genomic findings, support publication-ready analyses, and develop tailored analytical approaches for ongoing research studies
+    \item Mentored junior researchers and lab members on genomic data analysis, pipeline development, statistical workflows, and reproducible computational research practices
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2020--2021}{Clinical Bioinformatician}{Aperiomics}{Sterling, VA}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
-    \item [Achievement or responsibility 3]
+    \item Designed and deployed a NGS pipeline for Human Papillomavirus (HPV), enabling accurate identification of Alpha, Beta, and Gamma strains for NIH and X4 Pharmaceuticals through analysis of FASTQ, BAM/CRAM, and aligned sequencing data
+    \item Processed and analyzed sequencing data from clinical samples (fecal, plasma, urine, CSF, tissue) by aligning reads against a curated database of 40,000 bacterial, viral, and fungal genomes for pathogen identification and clinical reporting
+    \item Automated data transfer, sequencing data processing, and report/variant filter generation workflows, significantly improving turnaround time for results delivered to clinicians and patients
+    \item Implemented containerized bioinformatics workflows using Docker and executed scalable pipelines on AWS (S3, EC2, Glacier) and local HPC clusters to ensure reproducibility, scalability, and secure data access
+    \item Conducted validation studies for fecal and plasma sequencing assays and authored SOPs and QC documentation in compliance with CAP regulations
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY--YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{2018--2020}{Researcher}{Temple University}{Philadelphia, PA}{}{\vspace{1pt}
 \begin{itemize}
-    \item [Achievement or responsibility 1]
-    \item [Achievement or responsibility 2]
+    \item Built and maintained a SQL database of protein and DNA sequences (multi-species FASTA) to enable large-scale gene duplication and gene clustering analysis
+    \item Developed and deployed custom scripts (Python, R, SQL, Bash) to automate retrieval and analysis of biochemical data from public databases, improving reproducibility and efficiency
 \end{itemize}}}
 
 \end{itemize}
@@ -114,46 +119,41 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\needspace{5\baselineskip}
+\item{\cventry{2024--2026}{Master of Science in Engineering: Scientific Computing; Certificate in Biomedical Informatics}{University of Pennsylvania}{Philadelphia, PA}{}{\vspace{1pt}
+GPA: 3.70/4.00
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY--YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+\item{\cventry{2019}{Professional Science Master's: Bioinformatics}{Temple University}{Philadelphia, PA}{}{}}
+
+\vspace{3pt}
+
+\item{\cventry{2016}{Bachelor of Science: Biology}{State University of New York at Albany}{Albany, NY}{}{}}
 
 \end{itemize}
 
 % ============================================================
-%     LANGUAGES
-% ============================================================
-
-\section{Languages}
-\vspace{1pt}
-\begin{itemize}
-\item [Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
+%     PUBLICATIONS
 % ============================================================
 
 \section{Publications}
 \vspace{1pt}
 \begin{itemize}
-\item [Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}
+\item Rajabli, F., Benchek, P., Tosto, G. et al. (2025). Multi-ancestry genome-wide meta-analysis of 56,241 individuals identifies known and novel cross-population and ancestry-specific associations as novel risk loci for Alzheimer's disease. \textit{Genome Biol} 26, 210. \href{https://doi.org/10.1186/s13059-025-03564-z}{DOI}
+\item Kuzma, A., et al. (2024). NIAGADS: A Comprehensive National Data Repository for Alzheimer's Disease and Related Dementia Genetics and Genomics Research. \href{https://doi.org/10.1101/2024.10.07.24315029}{DOI}
+\item Naj, A., et al. (2023). Multi-Ancestry Genome-wide Association Analysis of Late-Onset Alzheimer's Disease (LOAD) in 60,941 Individuals Identifies Multiple Novel Cross-Ancestry Associations and Implicates Amyloid and Complement Pathways. \textit{Alzheimer's \& Dementia}. 19. \href{https://doi.org/10.1002/alz.079401}{DOI}
 \end{itemize}
 
 % ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{Second Place, 2025 Penn HealthCare Case Competition} -- Blue Crane Bio Consulting (2025). Finalist team selected from 49 applicants across 44 global universities; developed commercialization strategy for Miist Therapeutics.}
 \end{itemize}
 
 % ============================================================

@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Taha Iqbal
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Taha Iqbal, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,68 +10,70 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
-- **Languages:** [YOUR_LANGUAGES]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Name:** Taha Iqbal
+- **Location:** Philadelphia, PA
+- **Languages:** English
+- **Status:** Employed (Bioinformatician II, UPenn Perelman School of Medicine); MSE in progress (graduating Jul 2026)
+- **LinkedIn headline:** "MS, MSE* | University of Pennsylvania | Bioinformatician | Alzheimer's Disease"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **MSE in Scientific Computing** (Aug 2024 – Jul 2026) - University of Pennsylvania
+  - Certificate in Biomedical Informatics
+  - GPA: 3.70/4.00
+- **Professional Science Master's: Bioinformatics** (–2019) - Temple University
+- **BS: Biology** (–2016) - State University of New York at Albany
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Bioinformatician II** (Aug 2021 – Present) - **Perelman School of Medicine, University of Pennsylvania** (Philadelphia, PA)
+  - NGS and GWAS analysis workflows for 50,000+ whole genomes
+  - Large-scale genomic data analysis, variant QC, cohort harmonization, statistical genetics
+  - AWS/HPC pipeline optimization, multi-cohort data harmonization, genome build liftover
+  - Cross-functional collaboration with computational biologists, statisticians, and investigators
+  - Mentoring junior researchers on pipeline development and reproducible research practices
+
+- **Clinical Bioinformatician** (Nov 2020 – Jun 2021) - **Aperiomics** (Sterling, VA)
+  - Designed and deployed NGS pipeline for HPV strain identification (NIH, X4 Pharmaceuticals clients)
+  - Clinical sample processing against 40,000-genome reference database
+  - CAP-compliant validation studies, SOP authorship, Docker/AWS deployment
+
+- **Researcher** (Mar 2018 – Nov 2020) - **Temple University** (Philadelphia area)
+  - SQL database for protein/DNA sequence analysis; Python/R/Bash automation
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
-
-### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **Primary:** Python, R, SQL; NGS (DNA-Seq, RNA-Seq), GWAS, GATK, PLINK, Samtools, Bedtools, Bioconductor, Fine-Mapping
+- **Secondary:** scikit-learn, TensorFlow, PyTorch, Flask, FastAPI, C++, Java, Bash/Shell
+- **Domain:** Computational genomics, statistical genetics, Alzheimer's disease, clinical bioinformatics
+- **Software:** Snakemake, Nextflow, Docker, Singularity, Git, AWS (S3/EC2/Glacier), SLURM/HPC
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- Rajabli et al. (2025). Multi-ancestry GWAS meta-analysis of 56,241 individuals... *Genome Biol* 26, 210.
+- Kuzma et al. (2024). NIAGADS: A Comprehensive National Data Repository for AD genetics.
+- Naj et al. (2023). Multi-Ancestry GWAS of LOAD in 60,941 individuals. *Alzheimer's & Dementia*.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- **2nd place, 2025 Penn HealthCare Case Competition** – Blue Crane Bio Consulting (2025). Finalist from 49 teams across 44 global universities.
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Technical specialist** - Deep expertise in computational genomics; strong identification with research impact
+- **Reproducibility-focused** - Consistent emphasis on documented, version-controlled, scalable workflows
+- **Cross-disciplinary communicator** - Comfortable translating between computational and clinical/research audiences
+- **Strengths:** Pipeline architecture, large-scale data analysis, mentoring, rigorous validation
+- **Growth areas:** Business/strategy exposure developing (case competition); breadth outside genomics
+- **Thrives in:** Research environments valuing rigor and autonomy; cross-functional teams where computational expertise is a differentiator
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Large-scale genomic data problems with clear research or clinical impact
+- Building reproducible, scalable pipelines that enable downstream science
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Academic / research: Genomics institutes, Alzheimer's/neurodegenerative disease research, population genetics centers
+- Biotech / pharma: Computational biology teams, genomics platforms, precision medicine
+- Healthcare tech / clinical diagnostics: Bioinformatics roles in regulated environments
 
 ### Deal-breakers
-<!-- Hard constraints on job search -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Roles requiring relocation outside Philadelphia (unless remote)
+- Pure maintenance roles with no research or development component
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

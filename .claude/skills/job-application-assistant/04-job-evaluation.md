@@ -1,7 +1,5 @@
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
-
 ## Scoring Dimensions
 
 Evaluate each job posting against these five dimensions:
@@ -16,9 +14,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** NGS pipeline development (DNA-Seq, RNA-Seq), GWAS / statistical genetics (GATK, PLINK, Fine-Mapping), Python, R, SQL, AWS (S3/EC2/Glacier), HPC/SLURM, Docker, Snakemake, Nextflow, Samtools, Bedtools, Bioconductor, BCF/VCF handling, genome build liftover, variant QC, cohort harmonization
+**Moderate match areas:** Applied ML (scikit-learn, TensorFlow, PyTorch — research context, not production), RESTful API development (Flask, FastAPI), clinical/CAP-regulated environments, Singularity
+**Weak match areas:** Pure software engineering (front-end, systems), production ML platforms, non-genomics data science, drug discovery cheminformatics
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for?
@@ -30,9 +28,9 @@ Does work history align with what they're looking for?
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Bioinformatics pipeline development, large-scale genomic data analysis, GWAS, NGS, cloud/HPC bioinformatics, Alzheimer's disease / neurodegenerative disease genomics, clinical bioinformatics (CAP-compliant), multi-cohort data harmonization
+**Moderate:** Applied ML in biomedical research, metagenomics / pathogen detection, research software engineering, mentoring/training
+**Entry-level:** Pure data science (non-genomics), biotech consulting, product/commercial roles
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -44,12 +42,13 @@ Does the role and company culture match the behavioral profile?
 | 40-59 | Some friction areas |
 | 0-39 | Significant culture mismatch |
 
-**Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
+**Red flags to research:** High-churn environments, maintenance-heavy roles with no research or development component, weak emphasis on reproducibility, no cross-functional collaboration. Check Glassdoor, LinkedIn team composition, and recent publications or press.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Philadelphia metro area: PASS
+- Remote (US): PASS
+- Hybrid with occasional Philadelphia office: PASS
+- Requires relocation outside Philadelphia: FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
 
 ### 5. Career Alignment & Motivation (0-100)
@@ -63,19 +62,17 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- [To be filled in by user — e.g., senior bioinformatics/computational biology roles, genomics data science, biotech industry transition, research scientist positions]
 
-**Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
-- Non-task factors: leadership style, department culture, company values, degree of autonomy
+**Motivation filter:** Evaluate not just whether Taha *can* do the tasks, but whether they will *energize* him. Consider:
+- Tasks that energize: Large-scale genomic data analysis, pipeline architecture, cross-team collaboration on research problems, technical mentorship
+- Tasks that drain: [To be confirmed by user]
+- Non-task factors: Research impact, scientific rigor, autonomy on methodology
 
-**Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+**Life situation alignment:**
+- **Status:** Employed + in MSE program (graduating Jul 2026); timing of applications matters
+- **Flexibility:** Philadelphia-based; remote or Philadelphia metro preferred
+- **Professional development:** MSE in progress — roles that complement or build on computational/ML skills are additive
 
 ### 6. Salary Benchmark (Optional)
 
@@ -94,8 +91,6 @@ Present findings as:
 | [Category] index | XX.X (+/-X.X% vs baseline) |
 | Overall index | XX.X (+/-X.X% vs baseline) |
 ```
-
-Interpret results relative to the baseline defined in the data file's metadata. For index-based data, higher typically means above-market compensation.
 
 If the salary tool is not configured, skip this section.
 

@@ -1,7 +1,5 @@
 # CV Templates and Tailoring Guide
 
-<!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
-
 ## Template: LaTeX moderncv (Banking Style)
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
@@ -39,28 +37,28 @@ Expected output: `Output written on main_<company>.pdf (2 pages, ...)`. Any page
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Taha Iqbal - CV},
     pdfpagemode=FullScreen,
 }
 \usepackage[scale=0.77]{geometry}
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\name{Taha}{Iqbal}
+\address{Philadelphia, PA}{}{}
+\phone[mobile]{(267) 506-6888}
+\email{Taha.iqbal1993@gmail.com}
+\extrainfo{\href{https://linkedin.com/in/taha-iqbal-001}{LinkedIn}, \href{https://github.com/Tahai-nformatics}{GitHub}}
 
 \begin{document}
 \makecvtitle
 
 % 1. Profile statement (1-3 sentences, tailored per role)
 % 2. Skills section
-% 3. Education section
-% 4. Professional Experience section
-% 5. Selected Publications (if applicable)
-% 6. Honors and Awards (if applicable)
+% 3. Professional Experience section
+% 4. Education section
+% 5. Selected Publications
+% 6. Honors and Awards
 % 7. References
 
 \end{document}
@@ -96,6 +94,20 @@ Two related patterns are fine and should be kept:
 - `\vspace{1pt}` immediately after `\section{...}` (between section heading and first item) - this is between the heading and the list, not between list items.
 - `\vspace{3pt}` between top-level `\cventry` blocks in Professional Experience or Education - this gives breathing room between roles and renders consistently.
 
+## Profile Statement Templates
+
+### For Bioinformatics / Computational Genomics roles:
+> Bioinformatician with 4+ years of experience developing reproducible NGS and GWAS pipelines for population-scale genomic datasets at the University of Pennsylvania. Combines deep expertise in variant analysis, cohort harmonization, and statistical genetics with strong Python, R, and cloud infrastructure skills (AWS, HPC). Experienced working across multidisciplinary teams on publication-ready Alzheimer's disease genomics research, with a track record of building scalable workflows that process terabytes of sequencing data.
+
+### For Computational Biology / Statistical Genetics roles:
+> Computational biologist specializing in large-scale statistical genetics and population genomics, with hands-on experience across the full GWAS workflow — from variant QC and cohort harmonization to fine-mapping and downstream ML applications. Brings 4+ years of production-grade pipeline development (Snakemake, Nextflow, Docker) on AWS and HPC, co-authorship on multi-ancestry Alzheimer's disease studies, and an MSE in Scientific Computing (UPenn, 2026).
+
+### For ML / Data Science in Healthcare / Biotech roles:
+> Data scientist and bioinformatician with deep experience applying machine learning and statistical methods to genomic and clinical datasets in a research setting. Proficient in Python (scikit-learn, TensorFlow, PyTorch), R, and SQL, with a strong foundation in reproducible pipeline engineering and cloud-scale data processing (AWS, HPC). Background spans Alzheimer's disease genomics, clinical metagenomics (CAP-regulated), and RESTful API development, with an MSE in Scientific Computing in progress at UPenn.
+
+### For Clinical Bioinformatics / Diagnostics roles:
+> Clinical bioinformatician with experience building and validating NGS pipelines in a CAP-regulated diagnostics environment (Aperiomics) and in large-scale academic genomics (UPenn Perelman School of Medicine). Designed pathogen detection workflows processing clinical samples across 40,000 reference genomes; later scaled to 50,000+ whole genomes in population-level GWAS studies. Brings rigorous SOP authorship, Docker/cloud deployment, and cross-functional communication with clinicians and investigators.
+
 ## Section-by-Section Tailoring
 
 ### Profile Statement / Elevator Pitch (Best Practice)
@@ -103,48 +115,37 @@ This is the most important section to customize. It appears right after `\makecv
 
 Write 5-7 lines that function as an "elevator pitch": a concise, compelling introduction explaining why you're qualified for *this specific role*. Focus on what the employer gains from hiring you.
 
-**Create 2-3 profile statement templates for your main role types:**
-
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
-
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
-
 ### Core Competencies / Skills Section (Best Practice)
 Reorder and emphasize based on the role. Use bold category labels.
 
 List **5-7 key competencies** in bullet format, tailored to the specific job. For each competency, briefly explain how it adds value to the position.
 
 ### Education
-- Always include your highest degrees
-- For senior roles, keep education brief (dates and titles only)
-- Include thesis topics when relevant to the target role
+- Always include highest degrees
+- MSE at UPenn (in progress, 2026) is a strong signal — always include
+- For industry roles, keep education brief (dates and titles only)
 
 ### Professional Experience
 - Rewrite bullet points to emphasize aspects most relevant to the target role
 - Use 4-6 bullets for most recent role, 3-4 for previous, 2-3 for older
-- **Emphasize measurable results** where possible: "Reduced processing time by X%", "Model adopted by the team"
+- **Emphasize measurable results** where possible: "50,000+ whole genomes", "40,000 reference genomes", "terabyte-scale"
 
-### Handling Employment Gaps (Best Practice)
-If there is a gap in your employment history:
-- The gap should be explained matter-of-factly if needed
-- Describe how professional development continued during the gap
-- Frame as deliberate skill-building and career repositioning
+### Handling the Temple Researcher Role
+This role (2018–2020) is optional on the CV — include it when:
+- The posting values database engineering or early-career research breadth
+- Space allows (it's a 3rd role and may push to 3 pages — cut bullets aggressively)
+- Omit it when the CV is already full and the role adds little signal for the target posting
 
 ### Publications
-- Include Google Scholar link if applicable
-- Select 3-4 most relevant publications (not always all of them)
-- For non-academic roles, keep brief
+- Include all 3 current publications for academic and research roles
+- For industry roles, include 1-2 most relevant; keep format brief
+- Lead with Rajabli 2025 (most recent, highest-impact)
 
 ### Honors and Awards
-- Keep format brief, one line each
+- 2025 Penn HealthCare Case Competition (2nd place) — include for consulting, biotech strategy, or any role where business acumen is valued
 
 ### References
-- List 2-4 references with name, title, company, and contact
-- End with: "More references are available upon request."
-- **Do not attach reference letters** - employers typically contact references directly
+- List upon request only (single line) unless specifically asked
 
 ## Compile-and-Inspect Loop (MANDATORY)
 
@@ -187,7 +188,7 @@ The CV **must** fit on exactly 2 pages when compiled. Use these content limits a
 | Older roles | 2 bullets (1 line each) |
 | Education | 2-3 entries |
 | Publications | 2-3 entries |
-| Awards | 3 entries, single line each |
+| Awards | 1-2 entries, single line each |
 | References | "Available upon request." (single line) |
 
 **If in doubt, cut rather than squeeze.** Reducing `\vspace` or geometry scale to force-fit content makes the CV look cramped.
@@ -207,35 +208,36 @@ Cut the lowest-total-score line first, regardless of which section it sits in.
 ### Practical order of cuts (easiest → last resort)
 
 1. **Redundancy.** If an achievement appears in both Core Competencies AND a role bullet, the Core Competencies version is usually the cleaner cut (the experience bullet is more concrete evidence).
-2. **Profile-statement fluff.** A sentence that just restates what Publications or Skills will show. ("Peer-reviewed publications on X..." is already a Publications entry — profile can claim it once and stop.)
-3. **Low-relevance experience bullets.** A bullet about work that does not touch posting keywords, wherever it sits. This cuts across sections before touching the structural list.
-4. **Low-relevance supporting content.** An older-role bullet that does not speak to the target role. A certification that does not touch the posting's stack. A language entry that can be condensed to one line.
-5. **Low-relevance publications.** Keep 1-2 publications that best match the posting. Cut the rest before touching experience bullets.
-6. **Last-resort structural cuts.** Oldest education entry, tightening an older role to 2 bullets, collapsing Certifications into a single line. These only happen if the relevance-weighted cuts above have already been exhausted.
-
-### Pitfalls to avoid
-
-- Do not mechanically cut from the bottom of a static section list without checking relevance. "Cut the oldest role first" is wrong if that role is literally about the skill the posting asks for.
-- Do not cut the one concrete example the cover letter leans on. Relevance is measured against the cover letter you wrote, not just the job posting — interviewers will have read both.
-- Do not cut to fit if the fit is borderline (2.02 pages). Prefer `\enlargethispage{2-3\baselineskip}` on a late section for near-misses; reserve content cuts for genuine overflow (content on page 3 that is more than a single trailing section).
+2. **Profile-statement fluff.** A sentence that just restates what Publications or Skills will show.
+3. **Low-relevance experience bullets.** A bullet about work that does not touch posting keywords, wherever it sits.
+4. **Low-relevance supporting content.** Temple Researcher role bullets; certifications that don't match the posting's stack.
+5. **Low-relevance publications.** Keep 1-2 publications that best match the posting.
+6. **Last-resort structural cuts.** Oldest education entry, tightening an older role to 2 bullets.
 
 ## Recommended Section Order
 
-The section order varies by role type:
-
-**For technical / data science / ML roles:**
+**For bioinformatics / computational genomics / statistical genetics roles:**
 1. Profile statement / elevator pitch
 2. Core competencies / Skills
 3. Professional Experience (reverse chronological)
 4. Education (reverse chronological)
-5. Languages
-6. Publications & Awards
+5. Publications
+6. Honors and Awards
 7. References
 
-**For domain-specific / specialist roles:**
+**For ML / data science / healthcare tech roles:**
 1. Profile statement / elevator pitch
 2. Core competencies / Skills
-3. Education (reverse chronological) - credentials are a key qualifier
+3. Professional Experience (reverse chronological)
+4. Education (reverse chronological)
+5. Publications (abbreviated)
+6. Honors and Awards
+7. References
+
+**For clinical / diagnostics / regulatory roles:**
+1. Profile statement / elevator pitch
+2. Core competencies / Skills
+3. Education (reverse chronological) — credentials are a key qualifier
 4. Professional Experience (reverse chronological)
-5. Publications & Awards
+5. Publications
 6. References
