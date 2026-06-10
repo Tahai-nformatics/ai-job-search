@@ -62,7 +62,9 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [To be filled in by user — e.g., senior bioinformatics/computational biology roles, genomics data science, biotech industry transition, research scientist positions]
+- Senior Bioinformatician or Bioinformatics Scientist (mid-level, IC track)
+- Roles with meaningful research ownership — not pure support/service bioinformatics
+- Potential longer-term pivot into biotech/pharma computational biology teams
 
 **Motivation filter:** Evaluate not just whether Taha *can* do the tasks, but whether they will *energize* him. Consider:
 - Tasks that energize: Large-scale genomic data analysis, pipeline architecture, cross-team collaboration on research problems, technical mentorship
@@ -74,7 +76,13 @@ Does this role advance career goals and contain tasks that energize?
 - **Flexibility:** Philadelphia-based; remote or Philadelphia metro preferred
 - **Professional development:** MSE in progress — roles that complement or build on computational/ML skills are additive
 
-### 6. Salary Benchmark (Optional)
+### 6. Salary Floor (Hard Filter)
+
+**Minimum acceptable:** $120,000/year (base salary). Flag any role that is clearly below this — either from a posted range or from market data for the role/company/location. Do not auto-reject, but surface the concern explicitly so Taha can decide.
+
+When a salary range is posted, note whether it clears $120k at the midpoint (not just the top of range).
+
+### 7. Salary Benchmark (Optional)
 
 If the salary lookup tool is configured (`salary_data.json` exists), look up the company:
 ```

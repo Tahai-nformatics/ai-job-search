@@ -66,6 +66,10 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - Large-scale genomic data problems with clear research or clinical impact
 - Building reproducible, scalable pipelines that enable downstream science
 
+### Target Role Level
+- **Target:** Senior Bioinformatician, Bioinformatics Scientist (mid-level, IC track)
+- **Salary floor:** $120,000+ base — flag roles that appear to be below this
+
 ### Target Sectors
 - Academic / research: Genomics institutes, Alzheimer's/neurodegenerative disease research, population genetics centers
 - Biotech / pharma: Computational biology teams, genomics platforms, precision medicine
@@ -73,7 +77,8 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Deal-breakers
 - Roles requiring relocation outside Philadelphia (unless remote)
-- Pure maintenance roles with no research or development component
+- Pure maintenance/support bioinformatics with no research or development component
+- Base salary below $120,000
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
