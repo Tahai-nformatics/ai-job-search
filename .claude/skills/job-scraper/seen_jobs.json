@@ -1,1 +1,92 @@
-{"seen": {}}
+{
+  "seen": {
+    "beam-therapeutics-statistical-genetics-4240166427": {
+      "title": "Senior Scientist / Principal Scientist, Statistical Genetics",
+      "company": "Beam Therapeutics",
+      "url": "https://job-boards.greenhouse.io/beamtherapeutics/jobs/7933837002",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "new"
+    },
+    "alnylam-scientist-statistical-genetics-4211042540": {
+      "title": "Scientist, Statistical Genetics",
+      "company": "Alnylam Pharmaceuticals",
+      "url": "https://opportunities.alnylam.com/job/Cambridge-Scientist,-Statistical-Genetics-MA-02142/1296895700/",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "new"
+    },
+    "alnylam-senior-scientist-statistical-genetics": {
+      "title": "Senior Scientist, Statistical Genetics",
+      "company": "Alnylam Pharmaceuticals",
+      "url": "https://opportunities.alnylam.com/job/Cambridge-Senior-Scientist,-Statistical-Genetics-MA-02142/1277057100/",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "new"
+    },
+    "myome-ngs-bioinformatics-scientist-4246256473": {
+      "title": "NGS Bioinformatics Scientist (Remote)",
+      "company": "MyOme",
+      "url": "https://www.linkedin.com/jobs/view/ngs-bioinformatics-scientist-remote-at-myome-4246256473",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "new"
+    },
+    "mount-sinai-bioinformatician-ii-psychiatry-cdn": {
+      "title": "Bioinformatician II - Center for Disease Neurogenomics / Psychiatry",
+      "company": "Mount Sinai Health System",
+      "url": "https://careers.mountsinai.org/jobs/3030571",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "new"
+    },
+    "tahoe-therapeutics-senior-bioinformatician-4300142037": {
+      "title": "Senior Bioinformatician / Senior Computational Biologist",
+      "company": "Tahoe Therapeutics",
+      "url": "https://jobs.lever.co/tahoebio-ai/b877fcbb-7628-437e-8344-d93a5424666d",
+      "first_seen": "2026-06-10",
+      "fit": "medium",
+      "status": "new"
+    },
+    "pillar-biosciences-bioinformatics-scientist-4407241705": {
+      "title": "Bioinformatics Scientist (Remote)",
+      "company": "Pillar Biosciences",
+      "url": "https://www.linkedin.com/jobs/view/bioinformatics-scientist-remote-at-pillar-biosciences-incorporated-4407241705",
+      "first_seen": "2026-06-10",
+      "fit": "medium",
+      "status": "skipped"
+    },
+    "billiontoone-senior-bioinformatics-scientist-4340798790": {
+      "title": "Senior Bioinformatics Scientist",
+      "company": "BillionToOne",
+      "url": "https://job-boards.greenhouse.io/billiontoone/jobs/4051552005",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "skipped"
+    },
+    "valo-health-senior-staff-data-scientist-4362144995": {
+      "title": "Senior Staff Data Scientist, Statistical Genetics",
+      "company": "Valo Health",
+      "url": "https://job-boards.greenhouse.io/valohealth/jobs/8375027002",
+      "first_seen": "2026-06-10",
+      "fit": "high",
+      "status": "skipped"
+    },
+    "atcc-senior-bioinformatician-3342103947": {
+      "title": "Senior Bioinformatician",
+      "company": "ATCC",
+      "url": "https://www.linkedin.com/jobs/view/senior-bioinformatician-at-atcc-3342103947",
+      "first_seen": "2026-06-10",
+      "fit": "medium",
+      "status": "skipped"
+    },
+    "jefferson-health-bioinformatics-analyst-3559408917": {
+      "title": "Bioinformatics Analyst / Computational Biologist",
+      "company": "Jefferson Health",
+      "url": "https://www.linkedin.com/jobs/view/bioinformatics-analyst-computational-biologist-cancer-biology-lab-of-dr-christine-eischen-at-jefferson-health-3559408917",
+      "first_seen": "2026-06-10",
+      "fit": "medium",
+      "status": "skipped"
+    }
+  }
+}
